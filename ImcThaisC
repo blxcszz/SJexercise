@@ -1,0 +1,38 @@
+import javax.swing.JOptionPane;
+
+   public class Imc{
+	   public static void main(String[] args){
+        
+        double alt, pes, imc;
+        
+         alt = Double.parseDouble(JOptionPane.showInputDialog("Informe sua altura: "));
+         pes = Double.parseDouble(JOptionPane.showInputDialog("Informe seu peso: "));
+         
+         imc = pes / (alt * alt);
+         
+         JOptionPane.showMessageDialog(null, "O imc é: " + imc);
+
+        
+        
+         
+         if (imc == 20.7){
+         
+            JOptionPane.showMessageDialog(null, "Voce é saudavel");
+            
+            if(imc < 20.7){
+        
+                JOptionPane.showMessageDialog(null, "Voce esta um pouco abaixo do peso");}
+        
+            if(imc >= 27.8){
+        
+                JOptionPane.showMessageDialog(null, "Voce esta um a cima do peso");}
+        
+            if(imc >= 31.1){
+        
+                JOptionPane.showMessageDialog(null, "Voce é a thais carla");}   
+             
+                      
+       } 
+	     		
+   }	
+}
