@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+   public class AreaTriangle{
+	   public static void main(String[] args){
+         
+         double altura, base, area;
+         
+         JOptionPane.showMessageDialog(null,"Calculo de áreda do triangulo");
+         
+         altura =Double.parseDouble(JOptionPane.showInputDialog("Digite a altura do seu triangulo: "));
+         base = Double.parseDouble(JOptionPane.showInputDialog("Digite a base do seu triangulo: "));
+         
+         area = (altura * base) / 2;
+          
+         JOptionPane.showMessageDialog(null,"A área do seu triangulo é de: " + area);   		
+	}
+}
